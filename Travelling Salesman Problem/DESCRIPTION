@@ -21,6 +21,18 @@ The Christofides algorithm was one of the first approximation algorithms,
 As a matter of fact, the term "algorithm" was not commonly extended to approximation algorithms until later; 
    the Christofides algorithm was initially referred to as the Christofides heuristic.
    
+//3 Artificial intelligence researcher Marco Dorigo described in 1993 
+   a method of heuristically generating "good solutions" to the TSP using a simulation of an ant colony called ACS (Ant Colony System).
+It models behavior observed in real ants to find short paths between food sources and their nest, 
+   an emergent behaviour resulting from each ant's preference to follow trail pheromones deposited by other ants.
+ACS sends out a large number of virtual ant agents to explore many possible routes on the map.
+Each ant probabilistically chooses the next city to visit based on a heuristic
+   combining the distance to the city and the amount of virtual pheromone deposited on the edge to the city.
+The ants explore, depositing pheromone on each edge that they cross, until they have all completed a tour.
+At this point the ant which completed the shortest tour deposits virtual pheromone along its complete tour route (global trail updating).
+The amount of pheromone deposited is inversely proportional to the tour length: the shorter the tour, the more it deposits.
+   
 //Sources//
 C. Rego, D. Gamboa, F. Glover, O. Osterman. "Traveling salesman problem heuristics: Leading methods, implementations and latest advances". European Journal of Operational Research. June 16, 2011. 211
 Johnson, D.S. and McGeoch. "The traveling salesman problem: A case study in local optimization". Local search in combinatorial optimization. 1997. 215-310
+M. Dorigo. "Ant Colonies for the Traveling Salesman Problem". IEEE Transactions on Evolutionary Computation. 1997. 53–66
