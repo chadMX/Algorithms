@@ -6,8 +6,8 @@ c = [5,20,6,7,3,8] #Costs
 g = [a,v] #Graph
 paths = [] #Path Costs
 
-start = v[0]
-finish = v[2]
+start = v[0] #Start at the first vertex, B
+finish = v[2] #Finish at vertex, D
 
 =begin
  The below iteration uses the index of each edge to find
