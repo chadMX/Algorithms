@@ -1,0 +1,22 @@
+The travelling salesman problem (TSP) asks the following question:
+   Given a list of cities and the distances between each pair of cities,
+      what is the shortest possible route that visits each city exactly once and returns to the origin city? 
+
+It is an NP-hard problem in combinatorial optimization, important in operations research and theoretical computer science.
+
+Various heuristics and approximation algorithms, which quickly yield good solutions have been devised.
+Modern methods can find solutions for extremely large problems (millions of cities)
+   within a reasonable time which are with a high probability just 2–3% away from the optimal solution.
+
+//SOLUTIONS//
+//1 The nearest neighbor (NN) algorithm (or so-called greedy algorithm) lets the salesman choose the nearest unvisited city as his next move.
+This algorithm quickly yields an effectively short route. For N cities randomly distributed on a plane,
+   the algorithm on average yields a path 25% longer than the shortest possible path.
+However, there exist many specially arranged city distributions which make the NN algorithm give the worst route (Gutin, Yeo, and Zverovich, 2002).
+
+//2 The Christofides algorithm follows a similar outline but combines the minimum spanning tree with a solution of another problem,
+   minimum-weight perfect matching. This gives a TSP tour which is at most 1.5 times the optimal. 
+The Christofides algorithm was one of the first approximation algorithms,
+   and was in part responsible for drawing attention to approximation algorithms as a practical approach to intractable problems.
+As a matter of fact, the term "algorithm" was not commonly extended to approximation algorithms until later; 
+   the Christofides algorithm was initially referred to as the Christofides heuristic.
