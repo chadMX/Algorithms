@@ -4,9 +4,13 @@ v = ['b','c','d','e'] #Vertices
 a = [['b','c'],['b','d'],['b','e'],['c','d'],['c','e'],['e','d']] #Edges
 c = [5,20,6,7,3,8] #Costs
 g = [a,v] #Graph
-paths = [] #Path Costs
+h = [['b',50],['c', 30],['d',0],['e',41]] #Heuristics
 
-start = v[0] #Start at the first vertex, B
+paths = [] #Path Costs
+visited = [] #Visited vertices
+deadend = [] #Vertices that are dead ends(Loop avoidance).
+
+current = v[0] #Start at the first vertex, B
 finish = v[2] #Finish at vertex, D
 
 =begin
