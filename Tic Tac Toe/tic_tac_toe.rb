@@ -1,7 +1,7 @@
 def arena(player, choice, previous_moves)
-   a = [nil, nil, nil]
-   b = [nil, nil, nil]
-   c = [nil, nil, nil]
+   a = [" ", " ", " "]
+   b = [" ", " ", " "]
+   c = [" ", " ", " "]
    
    board = {
       'a' => a,
@@ -22,14 +22,14 @@ def arena(player, choice, previous_moves)
       player2 = move[0]
       choice2 = move[1]
       board.each{ |str, row|
-         if str == choice2[0]
-            if [0,1,2].include?(choice2[1].to_i)
-               row[choice2[1].to_i] = player2
+         if str == choice2
+            if [0,1,2].include?(choice2.to_i)
+               row[choice2.to_i] = player2
                break
             end
          end
       }
    }
    
-   board.each{ |str, row| p row}
+   board.each{ |str, row| puts row}
 end
