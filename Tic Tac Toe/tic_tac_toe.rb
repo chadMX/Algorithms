@@ -1,7 +1,7 @@
 def arena(player, choice, previous_moves)
-   a = [" "," "," "]
-   b = [" "," "," "]
-   c = [" "," "," "]
+   a = [nil, nil, nil]
+   b = [nil, nil, nil]
+   c = [nil, nil, nil]
    
    board = {
       'a' => a,
