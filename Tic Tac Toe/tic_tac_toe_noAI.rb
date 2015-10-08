@@ -28,7 +28,7 @@ def make_move(player, move, board)
 	row[choice[1].to_i] = player
 end
 
-#decide() is used by the $computer to randomly choose a move to apply to the board.
+#decide() is used by the computer to randomly choose a move to apply to the board.
 def decide
 	rows = %w[a b c]
 	slots = %w[1 2 3]
